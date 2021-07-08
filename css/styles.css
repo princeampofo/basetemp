@@ -15,7 +15,7 @@
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.225;
+  opacity: 0.23;
   position: fixed;
   top: -110%;
   width: 300%;
@@ -76,15 +76,6 @@
   width: 200px;
 }
 
-.title {
-  color: orange;
-  margin-top: 0.5em;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  pointer-events: none;
-}
-
 .msg {
   color: orange;
   margin-top: 0.5em;
@@ -124,43 +115,8 @@
   background-color: #040720;
 }
 
-.sun {
-  position: fixed;
-  top: 2em;
-  right: 2em;
-  width: 80px;
-  height: 80px;
-  background-color: #ffde00;
-  border-radius: 50%;
-  box-shadow: 0 0 0 10px #ffde0080, 0 0 0 20px #ffde0040, 0 0 0 30px #ffde0020,
-    0 0 0 40px #ffde0010, 0 0 0 60px #ffde0000, 0 0 10px 60px #ffde0010;
-  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
-}
-
-@keyframes sunrise {
-  0% {
-    box-shadow: none;
-  }
-}
-
-@keyframes rays {
-  0% {
-    box-shadow: 0 0 0 0 #ffde0080, 0 0 0 10px #ffde0080, 0 0 0 20px #ffde0040,
-      0 0 0 30px #ffde0020, 0 0 0 40px #ffde0010, 0 0 10px 60px #ffde0010;
-  }
-  100% {
-    box-shadow: 0 0 0 10px #ffde0080, 0 0 0 20px #ffde0040, 0 0 0 30px #ffde0020,
-      0 0 0 40px #ffde0010, 0 0 0 60px #ffde0000, 0 0 10px 60px #ffde0010;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .showContent:hover {
     letter-spacing: 2px;
-  }
-
-  .sun {
-    width: 60px;
-    height: 60px;
   }
 }
