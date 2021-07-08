@@ -2,26 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-html {
-  overflow: hidden;
+  cursor: url(../img/nat1006.cur), auto !important;
 }
 
-.landingpage {
+.container {
   width: 100%;
-  height: 100vh;
-  background-color: #e6e1d3;
 }
 
-.landingpage:before {
-  animation: grain 8s steps(7) infinite;
-  background-image: url("../img/paper_1.png");
+.container:before {
+  animation: grain 1s steps(6) infinite;
+  background-image: url("../img/paper_3.jpg");
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.3;
+  opacity: 0.225;
   position: fixed;
-  top: -100%;
+  top: -110%;
   width: 300%;
 }
 
@@ -59,6 +55,12 @@ html {
   }
 }
 
+.landingPage {
+  width: 100%;
+  height: 100vh;
+  background-color: #040720;
+}
+
 .landingPageContent {
   position: absolute;
   display: flex;
@@ -75,7 +77,7 @@ html {
 }
 
 .title {
-  color: #972e00;
+  color: orange;
   margin-top: 0.5em;
   text-align: center;
   font-weight: bold;
@@ -84,14 +86,14 @@ html {
 }
 
 .msg {
-  color: #972e00;
+  color: orange;
   margin-top: 0.5em;
   text-align: center;
   pointer-events: none;
 }
 
 .name {
-  color: #972e00;
+  color: orange;
   margin-top: 0.5em;
   text-align: center;
   font-style: italic;
@@ -102,16 +104,63 @@ html {
   display: block;
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: #212131;
   margin: 0.5em auto;
   letter-spacing: 2px;
-  width: 50%;
-  border: 1px solid black;
+  width: 70%;
+  border: 1px solid #212131;
   transition: 0.5s;
 }
 
 .showContent:hover {
   letter-spacing: 5px;
   transition: letter-spacing 0.5s;
-  cursor: cell;
+}
+
+.mainPage {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #040720;
+}
+
+.sun {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  width: 80px;
+  height: 80px;
+  background-color: #ffde00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #ffde0080, 0 0 0 20px #ffde0040, 0 0 0 30px #ffde0020,
+    0 0 0 40px #ffde0010, 0 0 0 60px #ffde0000, 0 0 10px 60px #ffde0010;
+  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear;
+}
+
+@keyframes sunrise {
+  0% {
+    box-shadow: none;
+  }
+}
+
+@keyframes rays {
+  0% {
+    box-shadow: 0 0 0 0 #ffde0080, 0 0 0 10px #ffde0080, 0 0 0 20px #ffde0040,
+      0 0 0 30px #ffde0020, 0 0 0 40px #ffde0010, 0 0 10px 60px #ffde0010;
+  }
+  100% {
+    box-shadow: 0 0 0 10px #ffde0080, 0 0 0 20px #ffde0040, 0 0 0 30px #ffde0020,
+      0 0 0 40px #ffde0010, 0 0 0 60px #ffde0000, 0 0 10px 60px #ffde0010;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .showContent:hover {
+    letter-spacing: 2px;
+  }
+
+  .sun {
+    width: 60px;
+    height: 60px;
+  }
 }
