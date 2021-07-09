@@ -1,40 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-</head>
-<body>
-    <!--------------------- Personal Portfolio Body ---------------------->
-    <div class="container">
-        <!---------------------- Landing Page --------------------->
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ========== Jquery ======== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--------------- Landing Page ----------->
         <div class="landingPage">
             <div class="landingPageContent">
                 <div class="landingMessage">
                     <p class="msg">But how could you live and have no story to tell?</p>
-                    <p class="name">- Fyodor Dostoevsky</p>
-                    <a href="#" class="showContent">My Journey</a>
+                    <p class="author">- Fyodor Dostoevsky</p>
+                    <a href="#" class="showContent">My Portfolio</a>
                 </div>
             </div>
         
         </div>
-
-        <!-------------------- Home Page ------------------------>
+        
+        <div class="cursor"></div>
         <div class="mainPage">
+            <!--===== HEADER =====-->
+            <header class="l-header">
+                <nav class="nav bd-grid">
+                    <div class="logoTitle">
+                        <div class="square"></div>
+                        <a href="#" class="nav__logo">PALTECH</a>
+                    </div>
 
-        </div>
-    </div>
-    
-    
-    <script src="js/script.js"></script>
-</body>
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                            <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="l-main">
+                <!--===== HOME =====-->
+                <section class="home bd-grid" id="home">
+                    <div class="home__data">
+                        <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Prince </span><br>An Aspiring Software Engineer</h1>
+
+                        <a href="#projects" class="button">Explore My Projects</a>
+                    </div>
+
+                </section>
+
+
+                <!--===== WORK =====-->
+                <section class="work section" id="projects">
+                    <h2 class="section-title">Projects</h2>
+
+                    <div class="work__container bd-grid1">
+                        <div class="work__img">
+                            <img src="img/project1.png" alt="">
+                            <div class="webInfo">
+                                <p class="webName"> Making a Film</p>
+                                <a href="https://princeampofo.github.io/30MFF/" class="webLinks">Website</a>
+                                <a href="https://github.com/princeampofo/30MFF" class="webLinks">Documentation</a>
+                            </div>
+                        </div>
+                        <div class="work__img">
+                            <img src="img/project2.png" alt="">
+                            <div class="webInfo">
+                                <p class="webName"> Go Digital</p>
+                                <a href="https://princeampofo.github.io/ComicWeb/" class="webLinks">Website</a>
+                                <a href="https://github.com/princeampofo/ComicWeb" class="webLinks">Documentation</a>
+                            </div>
+                        </div>
+                        <div class="work__img">
+                            <img src="img/project3.png" alt="">
+                            <div class="webInfo">
+                                <p class="webName"> Time Travel</p>
+                                <a href="https://princeampofo.github.io/soundProject/" class="webLinks">Website</a>
+                                <a href="https://github.com/princeampofo/soundProject" class="webLinks">Documentation</a>
+                            </div>
+                        </div>
+                        <div class="work__img">
+                            <img src="img/project4.png" alt="">
+                            <div class="webInfo">
+                                <p class="webName">How to make Friedrice</p>
+                                <a href="https://safal312.github.io/how-to-make-fried-rice/" class="webLinks">Website</a>
+                                <a href="https://github.com/safal312/how-to-make-fried-rice" class="webLinks">Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--===== SKILLS =====-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__container bd-grid">          
+                        <div>
+                            <h2 class="skills__subtitle">Professional Skills</h2>
+                            <p class="skills__text">Building meaningful and interactive websites/applications has been a passion of mine. I am conversant with the following languages:</p>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-html5 skills__icon'></i>
+                                    <span class="skills__name">HTML5</span>
+                                </div>
+                                <div class="skills__bar skills__html">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">90%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
+                                <div class="skills__bar skills__css">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">80%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon' ></i>
+                                    <span class="skills__name">JAVASCRIPT</span>
+                                </div>
+                                <div class="skills__bar skills__js">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>              
+                            <img src="img/coding1.jpeg" alt="" class="skills__img">
+                        </div>
+                    </div>
+                </section>
+
+                <!--===== ABOUT =====-->
+                <section class="about section " id="about">
+                    <h2 class="section-title">About</h2>
+
+                    <div class="about__container bd-grid">
+                        <div class="about__img">
+                            <img src="img/Prince.jpg" alt="">
+                        </div>
+                        <div>
+                            <h2 class="about__subtitle">Student at New York University</h2>
+                            <p class="about__text">I am a Computer Science student at New York University Abu Dhabi. I am passionate about building websites and applications using HTML , CSS and Javascript. As an aspiring software engineer, it is my goal that softwares I build do make a positive impact in the lives of people.I am music lover and I do play piano too.</p>           
+                        </div>                                   
+                    </div>
+                </section>
+                
+            </main>
+
+            <!--===== FOOTER =====-->
+            <footer class="footer">
+                <p class="footer__title">pla252@nyu.edu</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+            </footer>
+
+         </div>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="js/script.js"></script>
+    </body>
 </html>
-
-
