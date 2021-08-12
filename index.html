@@ -1,198 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="css/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css" />
 
-        <!-- ========== Jquery ======== -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--------------- Landing Page ----------->
-        <div class="landingPage">
-            <div class="landingPageContent">
-                <div class="landingMessage">
-                    <p class="msg">But how could you live and have no story to tell?</p>
-                    <p class="author">- Fyodor Dostoevsky</p>
-                    <a href="#" class="showContent">My Portfolio</a>
-                </div>
-            </div>
-        
+    <!-- ========== Jquery ======== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Portfolio website complete</title>
+  </head>
+  <body>
+    <!--------------- Landing Page ----------->
+    <div class="landingPage">
+      <div class="landingPageContent">
+        <div class="landingMessage">
+          <p class="msg">
+            Play another octave of the piano. If there are notes you haven't
+            touched, reach out and touch them.
+          </p>
+          <p class="author">- John Sexton</p>
+          <a href="#" class="showContent">Another Octave</a>
         </div>
-        
-        <div class="cursor"></div>
-        <div class="mainPage">
-            <!--===== HEADER =====-->
-            <header class="l-header">
-                <nav class="nav bd-grid">
-                    <div class="logoTitle">
-                        <div class="square"></div>
-                        <a href="#" class="nav__logo">PALTECH</a>
-                    </div>
+      </div>
+    </div>
 
-                    <div class="nav__menu" id="nav-menu">
-                        <ul class="nav__list">
-                            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                            <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                        </ul>
-                    </div>
+    <div class="cursor"></div>
+    <div class="mainPage">
+      <!--===== HEADER =====-->
+      <header class="l-header">
+        <nav class="nav bd-grid">
+          <div class="logoTitle">
+            <div class="square"></div>
+            <a href="#" class="nav__logo">PALTECH</a>
+          </div>
 
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class='bx bx-menu'></i>
-                    </div>
-                </nav>
-            </header>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#projects" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" class="nav__link">Skills</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About Me</a>
+              </li>
+            </ul>
+          </div>
 
-            <main class="l-main">
-                <!--===== HOME =====-->
-                <section class="home bd-grid" id="home">
-                    <div class="home__data">
-                        <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Prince </span><br>An Aspiring Software Engineer</h1>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+        </nav>
+      </header>
 
-                        <a href="#projects" class="button">Explore My Projects</a>
-                    </div>
+      <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+          <div class="home__data">
+            <h1 class="home__title">
+              Hi,<br />I am <span class="home__title-color">Prince </span
+              ><br />An Aspiring Software Engineer
+            </h1>
 
-                </section>
+            <a href="#projects" class="button">Explore My Projects</a>
+          </div>
+        </section>
 
+        <!--===== WORK =====-->
+        <section class="work section" id="projects">
+          <h2 class="section-title">Projects</h2>
 
-                <!--===== WORK =====-->
-                <section class="work section" id="projects">
-                    <h2 class="section-title">Projects</h2>
+          <div class="work__container bd-grid1">
+            <div class="work__img">
+              <img src="img/project1.jpg" alt="" />
+              <div class="webInfo">
+                <p class="webName">Making a Film</p>
+                <a href="https://princeampofo.github.io/30MFF/" class="webLinks"
+                  >Website</a
+                >
+                <a href="https://github.com/princeampofo/30MFF" class="webLinks"
+                  >Documentation</a
+                >
+              </div>
+            </div>
+            <div class="work__img">
+              <img src="img/project2.jpg" alt="" />
+              <div class="webInfo">
+                <p class="webName">Go Digital</p>
+                <a
+                  href="https://princeampofo.github.io/ComicWeb/"
+                  class="webLinks"
+                  >Website</a
+                >
+                <a
+                  href="https://github.com/princeampofo/ComicWeb"
+                  class="webLinks"
+                  >Documentation</a
+                >
+              </div>
+            </div>
+            <div class="work__img">
+              <img src="img/project3.jpg" alt="" />
+              <div class="webInfo">
+                <p class="webName">Time Travel</p>
+                <a
+                  href="https://princeampofo.github.io/soundProject/"
+                  class="webLinks"
+                  >Website</a
+                >
+                <a
+                  href="https://github.com/princeampofo/soundProject"
+                  class="webLinks"
+                  >Documentation</a
+                >
+              </div>
+            </div>
+            <div class="work__img">
+              <img src="img/project4.jpg" alt="" />
+              <div class="webInfo">
+                <p class="webName">How to make Friedrice</p>
+                <a
+                  href="https://safal312.github.io/how-to-make-fried-rice/"
+                  class="webLinks"
+                  >Website</a
+                >
+                <a
+                  href="https://github.com/safal312/how-to-make-fried-rice"
+                  class="webLinks"
+                  >Documentation</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
 
-                    <div class="work__container bd-grid1">
-                        <div class="work__img">
-                            <img src="img/project1.jpg" alt="">
-                            <div class="webInfo">
-                                <p class="webName"> Making a Film</p>
-                                <a href="https://princeampofo.github.io/30MFF/" class="webLinks">Website</a>
-                                <a href="https://github.com/princeampofo/30MFF" class="webLinks">Documentation</a>
-                            </div>
-                        </div>
-                        <div class="work__img">
-                            <img src="img/project2.jpg" alt="">
-                            <div class="webInfo">
-                                <p class="webName"> Go Digital</p>
-                                <a href="https://princeampofo.github.io/ComicWeb/" class="webLinks">Website</a>
-                                <a href="https://github.com/princeampofo/ComicWeb" class="webLinks">Documentation</a>
-                            </div>
-                        </div>
-                        <div class="work__img">
-                            <img src="img/project3.jpg" alt="">
-                            <div class="webInfo">
-                                <p class="webName"> Time Travel</p>
-                                <a href="https://princeampofo.github.io/soundProject/" class="webLinks">Website</a>
-                                <a href="https://github.com/princeampofo/soundProject" class="webLinks">Documentation</a>
-                            </div>
-                        </div>
-                        <div class="work__img">
-                            <img src="img/project4.jpg" alt="">
-                            <div class="webInfo">
-                                <p class="webName">How to make Friedrice</p>
-                                <a href="https://safal312.github.io/how-to-make-fried-rice/" class="webLinks">Website</a>
-                                <a href="https://github.com/safal312/how-to-make-fried-rice" class="webLinks">Documentation</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <div class="container mt-4">
+            <div class="row mt-4 d-flex justify-content-center">
+              <div class="col-3"><img src="/img/html.png" alt="" /></div>
+              <div class="col-3"><img src="/img/css.jpg" alt="" /></div>
+              <div class="col-3"><img src="/img/js.png" alt="" /></div>
+              <div class="col-3"><img src="/img/node.png" alt="" /></div>
+            </div>
+            <div class="row mt-2 d-flex justify-content-center">
+              <div class="col-3"><img src="/img/react.png" alt="" /></div>
+              <div class="col-3"><img src="/img/mysql.png" alt="" /></div>
+              <div class="col-3"><img src="/img/bootstrap.png" alt="" /></div>
+              <div class="col-3"><img src="/img/mongo.png" alt="" /></div>
+            </div>
+          </div>
+        </section>
 
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+          <h2 class="section-title">About</h2>
 
-                <!--===== SKILLS =====-->
-                <section class="skills section" id="skills">
-                    <h2 class="section-title">Skills</h2>
+          <div class="about__container bd-grid">
+            <div class="about__img">
+              <img src="img/Prince.jpg" alt="" />
+            </div>
+            <div>
+              <h2 class="about__subtitle">Student at New York University</h2>
+              <p class="about__text">
+                Prince Ampofo is a Computer Science student at New York
+                University Abu Dhabi. He is an aspiring software engineer who
+                likes to build useful and interactive web and software
+                applications to solve real-world problems. He has an interest in
+                Data science and Machine Learning and has taken part in
+                Hackathons for which he considers a better way of learning new
+                things and coordinating with like-minded people.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
 
-                    <div class="skills__container bd-grid">          
-                        <div>
-                            <h2 class="skills__subtitle">Professional Skills</h2>
-                            <p class="skills__text">Building meaningful and interactive websites/applications has been a passion of mine. I am conversant with the following languages:</p>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-html5 skills__icon'></i>
-                                    <span class="skills__name">HTML5</span>
-                                </div>
-                                <div class="skills__bar skills__html">
+      <!--===== FOOTER =====-->
+      <footer class="footer">
+        <p class="footer__title">pla252@nyu.edu</p>
+        <div class="footer__social">
+          <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="footer__icon"><i class="bx bxl-github"></i></a>
+        </div>
+      </footer>
+    </div>
 
-                                </div>
-                                <div>
-                                    <span class="skills__percentage">90%</span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-css3 skills__icon'></i>
-                                    <span class="skills__name">CSS3</span>
-                                </div>
-                                <div class="skills__bar skills__css">
-                                    
-                                </div>
-                                <div>
-                                    <span class="skills__percentage">80%</span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-javascript skills__icon' ></i>
-                                    <span class="skills__name">JAVASCRIPT</span>
-                                </div>
-                                <div class="skills__bar skills__js">
-                                    
-                                </div>
-                                <div>
-                                    <span class="skills__percentage">75%</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>              
-                            <img src="img/coding1.jpeg" alt="" class="skills__img">
-                        </div>
-                    </div>
-                </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-                <!--===== ABOUT =====-->
-                <section class="about section " id="about">
-                    <h2 class="section-title">About</h2>
-
-                    <div class="about__container bd-grid">
-                        <div class="about__img">
-                            <img src="img/Prince.jpg" alt="">
-                        </div>
-                        <div>
-                            <h2 class="about__subtitle">Student at New York University</h2>
-                            <p class="about__text">I am a Computer Science student at New York University Abu Dhabi. I am passionate about building websites and applications using HTML , CSS and Javascript. As an aspiring software engineer, it is my goal that softwares I build do make a positive impact in the lives of people.I am music lover and I do play piano too.</p>           
-                        </div>                                   
-                    </div>
-                </section>
-                
-            </main>
-
-            <!--===== FOOTER =====-->
-            <footer class="footer">
-                <p class="footer__title">pla252@nyu.edu</p>
-                <div class="footer__social">
-                    <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#" class="footer__icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-            </footer>
-
-         </div>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="js/script.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="js/script.js"></script>
+  </body>
 </html>

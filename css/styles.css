@@ -48,6 +48,7 @@
 html {
   scroll-behavior: smooth;
   cursor: cell;
+  overflow-x: hidden;
 }
 
 body {
@@ -151,11 +152,11 @@ img {
 }
 
 .landingMessage {
-  width: 200px;
+  width: 400px;
 }
 
 .msg {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: white;
   margin-top: 0.5em;
   text-align: center;
@@ -163,7 +164,7 @@ img {
 }
 
 .author {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: white;
   margin-top: 0.5em;
   text-align: center;
@@ -173,14 +174,14 @@ img {
 
 .showContent {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 600;
   text-decoration: none;
   text-align: center;
   color: #a5a5a5;
   margin: 0.5em auto;
   letter-spacing: 2px;
-  width: 90%;
+  width: 55%;
   border: 1px solid #a5a5a5;
   transition: 0.5s;
 }
@@ -322,6 +323,7 @@ img {
   height: calc(100vh - 3rem);
   row-gap: 1rem;
   padding-bottom: 2rem;
+  color: white;
 }
 .home__data {
   align-self: center;
@@ -406,65 +408,24 @@ img {
 }
 
 /* ===== SKILLS =====*/
-
-.skills__container {
-  row-gap: 2rem;
-  text-align: center;
+.row {
+  margin: auto;
 }
-.skills__subtitle {
-  margin-bottom: var(--mb-2);
-}
-.skills__text {
-  margin-bottom: var(--mb-4);
-}
-.skills__data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-}
-.skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-.skills__names {
-  display: flex;
-  align-items: center;
-}
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: 0.25rem;
-  border-radius: 0.5rem;
-  z-index: -10;
-}
-.skills__html {
-  width: 90%;
-}
-.skills__css {
-  width: 80%;
-}
-.skills__js {
-  width: 75%;
+.col-2 {
+  width: 130px;
+  height: 130px;
 }
 
-.skills__img {
-  margin-top: var(--mb-5);
-  border-radius: 0.5rem;
+.col-2 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
 }
-
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
   text-align: center;
+  color: white;
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
@@ -486,7 +447,7 @@ img {
   padding: 0.5rem 0;
 }
 .footer__title {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-bottom: var(--mb-2);
   margin-top: var(--mb-2);
 }
@@ -494,7 +455,7 @@ img {
   margin-bottom: var(--mb-4);
 }
 .footer__icon {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #fff;
   margin: 0 var(--mb-2);
 }
